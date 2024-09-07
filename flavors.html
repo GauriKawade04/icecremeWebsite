@@ -16,6 +16,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
     .btn{
       border:2px solid transparent;
       transition: border-color 0.3s ease-in-out;
@@ -42,6 +47,11 @@
   font-size:18px; /* Adjust the size as needed */
   font-weight: normal;
 }
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
   </style>
 
 </head>
@@ -87,17 +97,19 @@
 
   
 
+    
     <section class="ice-cream-section d-flex flex-column align-items-center justify-content-center">
-      <div class="ice-cream-image d-flex justify-content-center mt-3 ">
-       <img src="https://media.istockphoto.com/id/1326143969/photo/bowl-with-vanilla-ice-cream-balls.webp?b=1&s=170667a&w=0&k=20&c=bzLWih1MzXZnOb9x6929GXmBobUlyw4lEjxWytX7uxU=" alt="ice-cream-image">
+      <div class="ice-cream-image d-flex justify-content-center mt-3">
+          <img class="img-fluid" src="https://media.istockphoto.com/id/1326143969/photo/bowl-with-vanilla-ice-cream-balls.webp?b=1&s=170667a&w=0&k=20&c=bzLWih1MzXZnOb9x6929GXmBobUlyw4lEjxWytX7uxU=" alt="ice-cream-image">
       </div>
-      <div class="ice-cream-text text-center mt-4 ">
-        "Savor the elegance of our <br>
-        handcrafted ice cream <br>
-    where every scoop is a moment <br>
-         of pure delight."
+      <div class="ice-cream-text text-center mt-4">
+          "Savor the elegance of our <br>
+          handcrafted ice cream <br>
+          where every scoop is a moment <br>
+          of pure delight."
       </div>
-    </section>
+  </section>
+  
     <br><br>
 
 <h2 class="text-center">CLASSIC FLAVOURS</h2>
@@ -116,7 +128,7 @@
           and Perfection in <br>
              Every Scoop."
     </p>
-    <button class="btn mb-2" data-name="vanilla" data-price="50" data-image="https://media.istockphoto.com/id/948032164/photo/ice-cream.jpg?s=612x612&w=0&k=20&c=EWy8rEsWVuv67-DWH0a-rAlI7GSy1FAU237yg1TwFKg=">Order</button> 
+    <button class="btn mb-2" data-name="vanilla" data-price="50" data-image="https://media.istockphoto.com/id/948032164/photo/ice-cream.jpg?s=612x612&w=0&k=20&c=EWy8rEsWVuv67-DWH0a-rAlI7GSy1FAU237yg1TwFKg=">Add to cart</button> 
    </div>
  
     <div class="col-12 card mb-4">
@@ -128,7 +140,7 @@
             Tooth with Our <br>
             Heavenly Ice Cream!"
         </p>
-        <button class="btn mb-2" data-name="Chocolate" data-price="50" data-image="https://www.shutterstock.com/image-photo/delicious-chocolate-ice-cream-texture-600nw-2345983367.jpg" >Order</button>
+        <button class="btn mb-2" data-name="Chocolate" data-price="50" data-image="https://www.shutterstock.com/image-photo/delicious-chocolate-ice-cream-texture-600nw-2345983367.jpg" >Add to cart</button>
     </div>
 
     <div class="col-12 card mb-4">
@@ -140,7 +152,7 @@
             ice cream is a refreshing delight <br>
             for your taste buds!”
         </p>
-        <button class="btn mb-2" data-name="Mint Chocolate" data-price="50" data-image="https://media.istockphoto.com/id/1279996775/photo/extreme-close-up-of-green-ice-cream-being-scooped-up.jpg?s=612x612&w=0&k=20&c=iztwe-L55mj5Y353SCvmTIkx0o1Y2PYuRwpksDHyCZY=">Order</button>
+        <button class="btn mb-2" data-name="Mint Chocolate" data-price="50" data-image="https://media.istockphoto.com/id/1279996775/photo/extreme-close-up-of-green-ice-cream-being-scooped-up.jpg?s=612x612&w=0&k=20&c=iztwe-L55mj5Y353SCvmTIkx0o1Y2PYuRwpksDHyCZY=">Add to cart</button>
     </div>
 
     <div class="col-12 card mb-4">
@@ -152,7 +164,7 @@
             dance on your palate with every <br>
             delightful spoonful.”
         </p>
-        <button class="btn mb-2" data-name="Buttered Pecan" data-price="50" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2KVlac5WifoP3dD31CXaDw-8q05DNHxMWgA&s">Order</button>
+        <button class="btn mb-2" data-name="Buttered Pecan" data-price="50" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2KVlac5WifoP3dD31CXaDw-8q05DNHxMWgA&s">Add to cart</button>
     </div>
 
     <div class="col-12 card mb-4">
@@ -164,7 +176,7 @@
             creaminess in every spoonful of <br>
             Blueberry ice cream.”
         </p>
-        <button class="btn mb-2" data-name="Blueberry" data-price="50" data-image="https://cdn.create.vista.com/api/media/small/26090775/stock-photo-blueberry-ice-cream">Order</button>
+        <button class="btn mb-2" data-name="Blueberry" data-price="50" data-image="https://cdn.create.vista.com/api/media/small/26090775/stock-photo-blueberry-ice-cream">Add to cart</button>
     </div>
 
     <div class="col-12 card mb-4">
@@ -176,7 +188,7 @@
             colors with every scoop of <br>
             Rainbow ice cream.”
         </p>
-        <button class="btn mb-2" data-name="Rainbow" data-price="50" data-image="https://t3.ftcdn.net/jpg/08/25/29/40/360_F_825294076_g0ANJLJfJhqfNfBwfrKRrtPApatUd3hj.jpg" >Order</button>
+        <button class="btn mb-2" data-name="Rainbow" data-price="50" data-image="https://t3.ftcdn.net/jpg/08/25/29/40/360_F_825294076_g0ANJLJfJhqfNfBwfrKRrtPApatUd3hj.jpg" >Add to cart</button>
     </div>
 
     <div class="col-12 card mb-4">
@@ -188,7 +200,7 @@
             where every scoop is a burst of sweet, <br>
             fruity joy.”
         </p>
-        <button class="btn mb-2" data-name="Strawberry" data-price="50" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwjkC2irGWC1xa7sjYE9gFQRt8aFjckfaKUDOzUKOmKCbdE3lXZHYxE4tJUz0qd8S6q80&usqp=CAU">Order</button>
+        <button class="btn mb-2" data-name="Strawberry" data-price="50" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwjkC2irGWC1xa7sjYE9gFQRt8aFjckfaKUDOzUKOmKCbdE3lXZHYxE4tJUz0qd8S6q80&usqp=CAU">Add to cart</button>
     </div>
 
     <div class="col-12 card mb-4">
@@ -200,7 +212,7 @@
             to childhood dreams with its <br>
                 sweet,fluffy charm.”
         </p>
-        <button class="btn mb-2" data-name="Cotton Candy" data-price="50" data-image="https://img.freepik.com/premium-photo/cotton-candy-stick_1179130-57913.jpg">Order</button>
+        <button class="btn mb-2" data-name="Cotton Candy" data-price="50" data-image="https://img.freepik.com/premium-photo/cotton-candy-stick_1179130-57913.jpg">Add to cart</button>
     </div>
 </div>
 </div>

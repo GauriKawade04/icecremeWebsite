@@ -47,12 +47,12 @@ main{ background-image: url(https://images.unsplash.com/photo-1579954115563-e72b
    .ice-cream-image
    {
     
-    border: 2px solid rgb(9, 146, 57);
+    border: 1px solid rgb(9, 146, 57);
     border-radius: 15px;
     box-sizing: border-box;
     padding: 10px;
     flex-shrink: 0;
-    max-width: 100%; 
+    max-width: 90%; 
   height: auto; 
   
 
